@@ -1,0 +1,44 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+}
+nav .navbar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #fe8989;
+  cursor: pointer;
+}
+nav .navbar-button .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+nav .navbar-button .icons i {
+  position: absolute;
+  transition: opacity 0.3s, transform 0.4s;
+}
+nav .navbar-button .icons .fa-xmark {
+  opacity: 0;
+}
+nav .navbar-button .icons .xmark-animated {
+  transform: rotate(180deg) scale(1);
+  opacity: 1;
+}
+nav .navbar-button .icons .bars-animated {
+  transform: rotate(180deg) scale(0.5);
+  opacity: 0;
+}/*# sourceMappingURL=styles.css.map */
