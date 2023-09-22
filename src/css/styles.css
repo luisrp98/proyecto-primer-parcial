@@ -62,7 +62,7 @@ nav ul {
   transform: scaleY(0);
 }
 nav ul.navbar-menu-open {
-  animation: animationOpen 0.4s ease 0s 1 normal forwards;
+  animation: animationOpen 0.3s ease 0s 1 normal forwards;
 }
 @keyframes animationOpen {
   0% {
@@ -75,7 +75,7 @@ nav ul.navbar-menu-open {
   }
 }
 nav ul.navbar-menu-close {
-  animation: animationClose 0.4s ease 0s 1 reverse forwards;
+  animation: animationClose 0.3s ease 0s 1 reverse forwards;
 }
 @keyframes animationClose {
   0% {
