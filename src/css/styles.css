@@ -1,14 +1,18 @@
-html,
-body {
+html {
+  font-size: 16px;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
 
 nav {
-  display: flex;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 nav .navbar-button {
   display: flex;
@@ -19,6 +23,7 @@ nav .navbar-button {
   border-radius: 50%;
   background: #fe8989;
   cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
 }
 nav .navbar-button .icons {
   display: flex;
@@ -41,4 +46,48 @@ nav .navbar-button .icons .xmark-animated {
 nav .navbar-button .icons .bars-animated {
   transform: rotate(180deg) scale(0.5);
   opacity: 0;
+}
+nav ul {
+  list-style-type: none;
+  background-color: #fe8989;
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0 0.5rem 0;
+  position: relative;
+  top: -2rem;
+  z-index: -1;
+  border-radius: 1rem;
+  transform: scaleY(0);
+}
+nav ul.navbar-menu-open {
+  animation: animationOpen 0.4s ease 0s 1 normal forwards;
+}
+@keyframes animationOpen {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}
+nav ul.navbar-menu-close {
+  animation: animationClose 0.4s ease 0s 1 reverse forwards;
+}
+@keyframes animationClose {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}
+nav ul li {
+  display: inline;
+  margin: 0.5rem 0;
 }/*# sourceMappingURL=styles.css.map */
