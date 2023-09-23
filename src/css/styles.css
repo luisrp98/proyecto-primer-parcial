@@ -355,7 +355,17 @@ section {
   }
 }
 @media (min-width: 1024px) {
-  * {
-    background-color: green;
+  #experience h1 {
+    margin-top: 3rem;
+  }
+  #experience .experience-proyects {
+    justify-items: center;
+  }
+  #experience .experience-proyects #experience-isipage {
+    justify-content: center;
+    width: 50%;
+  }
+  #contact i {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */

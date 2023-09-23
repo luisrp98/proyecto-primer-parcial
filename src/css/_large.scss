@@ -1,3 +1,18 @@
-* {
-    background-color: green;
+#experience {
+    h1 {
+        margin-top: 3rem;
+    }
+
+    .experience-proyects {
+        justify-items: center;
+        #experience-isipage {
+            justify-content: center;
+            width: 50%;
+        }
+    }
+}
+#contact {
+    i {
+        font-size: 2rem;
+    }
 }
