@@ -376,3 +376,16 @@ section {
         }
     }
 }
+#contact {
+    background-color: $color-rich-black;
+    color: $color-white;
+    text-align: center;
+    text-shadow: $shadow-black;
+    padding: 2rem 0;
+
+    a {
+        text-decoration: none;
+        margin: 2rem 1rem;
+        color: $color-white;
+    }
+}

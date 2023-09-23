@@ -324,4 +324,17 @@ section {
     width: calc(112% + 1.3px);
     height: 74px;
   }
+}
+
+#contact {
+  background-color: #00171f;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  padding: 2rem 0;
+}
+#contact a {
+  text-decoration: none;
+  margin: 2rem 1rem;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=styles.css.map */
