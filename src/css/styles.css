@@ -90,4 +90,35 @@ nav ul.navbar-menu-close {
 nav ul li {
   display: inline;
   margin: 0.5rem 0;
+}
+
+section {
+  border: 1px solid #000;
+  height: 100vh;
+  width: 100vw;
+}
+
+#home {
+  background-image: url("../img/bg-home.png");
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+#home .home-text {
+  position: absolute;
+  top: 12rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+#home .home-text h1 {
+  font-size: 4rem;
+}
+#home .home-text p {
+  text-align: center;
+}
+#home #photo-img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }/*# sourceMappingURL=styles.css.map */

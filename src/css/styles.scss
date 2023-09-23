@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 html {
     font-size: 16px;
 }
@@ -101,18 +103,37 @@ nav {
     }
 }
 
-// animation: myAnim 0.4s ease 0s 1 reverse forwards;
+section {
+    border: 1px solid #000;
+    height: 100vh;
+    width: 100vw;
+    // background-color: $white;
+}
+#home {
+    // Background generator -> https://wavelry.vercel.app/
+    background-image: url('../img/bg-home.png');
+    background-size: cover;
 
-//             animation: myAnim 0.4s ease 0s 1 normal forwards;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    .home-text {
+        position: absolute;
+        top: 12rem;
+        color: $color-white;
+        text-shadow: $shadow-black;
 
-//   @keyframes myAnim {
-//                 0% {
-//                     transform: scaleY(0);
-//                     transform-origin: 100% 0%;
-//                 }
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            text-align: center;
+        }
+    }
 
-//                 100% {
-//                     transform: scaleY(1);
-//                     transform-origin: 100% 0%;
-//                 }
-//             }
+    #photo-img {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+}
