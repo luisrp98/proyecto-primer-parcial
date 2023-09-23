@@ -9,12 +9,16 @@ html {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 nav {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    // background-color: black;
     align-items: center;
+
+    position: fixed;
+    left: 5%;
+    top: 3%;
+    // background-color: black;
+    z-index: 100;
 
     .navbar-button {
         display: flex;
@@ -25,11 +29,11 @@ nav {
         height: 3rem;
         border-radius: 50%;
 
-        background: #fe8989;
+        background: $color-rich-black;
 
         cursor: pointer;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
-
+        box-shadow: $shadow-rich-black;
+        border: $boder-picton-blue;
         .icons {
             display: flex;
             justify-content: center;
@@ -55,8 +59,11 @@ nav {
     }
 
     ul {
+        box-shadow: $shadow-rich-black;
+        border: $boder-picton-blue;
+
         list-style-type: none;
-        background-color: #fe8989;
+        background-color: $color-rich-black;
         width: 2.5rem;
         display: flex;
         flex-direction: column;
@@ -99,10 +106,14 @@ nav {
         li {
             display: inline;
             margin: 0.5rem 0;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
         }
     }
 }
-
 section {
     border: 1px solid #000;
     height: 100vh;
@@ -114,7 +125,7 @@ section {
     background-image: url('../img/bg-home.png');
     background-size: cover;
 
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     .home-text {

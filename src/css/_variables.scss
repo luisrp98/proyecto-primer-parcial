@@ -4,4 +4,7 @@ $color-prussian-blue: rgb(0, 52, 89);
 $color-cerulean: rgb(0, 126, 167);
 $color-picton-blue: rgb(0, 168, 232);
 
-$shadow-black: 0.1rem 0.1rem 0.1rem black;
+$shadow-black: 0.1rem 0.1rem 0.2rem black;
+$shadow-rich-black: 0.5rem 0.5rem 0.5rem -0.2rem $color-rich-black;
+
+$boder-picton-blue: 0.2rem solid $color-picton-blue;

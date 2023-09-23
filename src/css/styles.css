@@ -10,9 +10,13 @@ html {
 }
 
 nav {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  left: 5%;
+  top: 3%;
+  z-index: 100;
 }
 nav .navbar-button {
   display: flex;
@@ -21,9 +25,10 @@ nav .navbar-button {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: #fe8989;
+  background: rgb(0, 23, 31);
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
+  box-shadow: 0.5rem 0.5rem 0.5rem -0.2rem rgb(0, 23, 31);
+  border: 0.2rem solid rgb(0, 168, 232);
 }
 nav .navbar-button .icons {
   display: flex;
@@ -48,8 +53,10 @@ nav .navbar-button .icons .bars-animated {
   opacity: 0;
 }
 nav ul {
+  box-shadow: 0.5rem 0.5rem 0.5rem -0.2rem rgb(0, 23, 31);
+  border: 0.2rem solid rgb(0, 168, 232);
   list-style-type: none;
-  background-color: #fe8989;
+  background-color: rgb(0, 23, 31);
   width: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -91,6 +98,10 @@ nav ul li {
   display: inline;
   margin: 0.5rem 0;
 }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
 
 section {
   border: 1px solid #000;
@@ -101,7 +112,7 @@ section {
 #home {
   background-image: url("../img/bg-home.png");
   background-size: cover;
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -109,7 +120,7 @@ section {
   position: absolute;
   top: 12rem;
   color: rgb(255, 255, 255);
-  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
 }
 #home .home-text h1 {
   font-size: 4rem;
